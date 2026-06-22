@@ -8,5 +8,6 @@
     <ApplicationId>com.kitsaud.app</ApplicationId>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
   </PropertyGroup>
 </Project>
