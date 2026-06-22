@@ -11,19 +11,19 @@ namespace KitSaud
         {
             base.OnCreate(savedInstanceState);
 
-            // إنشاء واجهة ترحيبية بسيطة داخل التطبيق
-            LinearLayout layout = new LinearLayout(this)
-            {
-                Orientation = Orientation.Vertical,
-                Gravity = Android.Views.GravityFlags.Center
-            };
+            // إنشاء الواجهة
+            LinearLayout layout = new LinearLayout(this);
+            layout.Orientation = Orientation.Vertical;
+            
+            // التعديل الصحيح لتجنب الخطأ: استدعاء دالة التوسط مباشرة
+            layout.SetGravity(Android.Views.GravityFlags.Center);
 
             TextView textView = new TextView(this)
             {
                 Text = "مرحباً بك في تطبيق كيت سعود!",
-                TextSize = 24,
-                Gravity = Android.Views.GravityFlags.Center
+                TextSize = 24
             };
+            textView.SetGravity(Android.Views.GravityFlags.Center);
 
             layout.AddView(textView);
             SetContentView(layout);
